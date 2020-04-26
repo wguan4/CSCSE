@@ -39,6 +39,10 @@
     </style>
 </head>d
 <body>
+    <script>
+document.body.addEventListener('touchmove', function (e) {
+    e.preventDefault()
+}, {passive: false})</script>
 <div class="parent">
     <div class="children">
         Zdrastvety
