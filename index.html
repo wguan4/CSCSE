@@ -1,70 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSCSE电子证照</title>
+    <title>CSCSE电子证照</title>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="basic style.css">
     <style type="text/css">
-        .parent{
-            width:600px;
-            height: 600px;
-            margin: 0 auto;
-            background: #efefef;
+        hr{
+            border: none;
+	        height: 1px;
+	        background-color: #CECED0;
+
         }
-        .children{
-            width: 200px;
-            height:200px;
-            background: skyblue;
-            margin:0 auto;
-            float: left;
-            padding: 10px;
-            border: 20px solid #333;
+        .main{
+            height: 1000px;
         }
-        .parent2{
-            width:600px;
-            height: 600px;
-            margin: 0 auto;
-            background: #efefef;
-        }
-        .children2{
-            width: 200px;
-            height:200px;
-            background: lightpink;
-            margin:0 auto;
-            float: left;
-            padding: 10px;
-            border: 20px solid #333333;
-            box-sizing:border-box;
+        .img1{
+            width: 100%;
+        
         }
     </style>
-</head>d
+</head>
 <body>
-    <script>
+<script>
 document.body.addEventListener('touchmove', function (e) {
     e.preventDefault()
-}, {passive: false})</script>
-<div class="parent">
-    <div class="children">
-        Zdrastvety
-    </div>
-    <div class="children">
-        Zdrastvety
-    </div>
-    <div class="children">
-        Zdrastvety
+}, {passive: false})</script> 
+<div class="main">
+<img src="imgs/heading.png" class="img1"/>
+    
+    <div>
+        <hr>
     </div>
 </div>
-<div class="parent2">
-    <div class="children2">
-        Zdrastvety
-    </div>
-    <div class="children2">
-        Zdrastvety
-    </div>
-    <div class="children2">
-        Zdrastvety
-    </div>
-</div>
+
 <!--盒子模型模式：
 普通模式(默认）：box-sizing: content-box  盒子的大小=边框border+内边距padding+内容content的宽高
 
