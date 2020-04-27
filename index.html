@@ -9,7 +9,7 @@
     <style type="text/css">
         hr{
             border: none;
-	        height: 3px;
+	    height: 3px;
             background-color: #CECED0;
             opacity: 60%;
             margin-left: 40px;
@@ -24,7 +24,7 @@
         
         }
         .t1{
-            font-size: 52pt;
+            font-size: 52px;
             text-align: center;
             color: black;
             margin-bottom: 28pt;
@@ -45,13 +45,13 @@ float: left;
         }
         .name{
             color: #116FB4;
-            font-size: 36pt;
+            font-size: 36px;
             margin-left: 10px;
             float: left;
         }
         .content{
             color: #949398;
-            font-size: 36pt;
+            font-size: 36px;
             margin-left: 40px;
         }
         .test{
@@ -65,7 +65,9 @@ float: left;
 <script>
 document.body.addEventListener('touchmove', function (e) {
     e.preventDefault()
-}, {passive: false})</script> 
+}, {passive: false})
+document.documentElement.style.fontSize = document.documentElement.clientWidth / 640*100 + 'px';
+</script> 
 <div class="main">
 <img src="i1.png" class="i1"/>
 <div class="bg">
